@@ -6,6 +6,7 @@ from numpy import array
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from random import choice, shuffle
+from read_tfrecord import read_tfrecord
 
 
 
