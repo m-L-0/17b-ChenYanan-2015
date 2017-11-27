@@ -1,6 +1,10 @@
+# -*- coding: utf-8 -*-
+# name:chenyanan
+
 from numpy import *
 import operator
 import os
+from read_tfrecord import read_tfrecord
 
 # 分类函数
 
