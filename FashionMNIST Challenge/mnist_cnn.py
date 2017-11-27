@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
+# name:chenyanan
+
 import os
 import random
 import numpy as np
 import tensorflow as tf
+from read_tfrecord import read_tfrecord
 
 # 一、环境设置
 # 设置按需使用GPU
