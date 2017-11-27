@@ -1,6 +1,10 @@
+# -*- coding: utf-8 -*-
+# name:chenyanan
+
 import tensorflow as tf
 from PIL import Image
 import numpy as np
+from read_tfrecord import read_tfrecord
 
 
 def read_tfrecord(config_dir, num = 1):   
