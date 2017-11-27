@@ -9,7 +9,7 @@
  
  4.先实现主成分分析，再实现k-means算法[设计并训练K-Means算法对图片进行聚类。](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/mnist_k-means.py)
  
- 5.[设计并训练NN算法对图片进行分类。](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/mnist_cnn.py)
+ 5.在构建网络中，使用了经典的三层模型，第一层为卷积池化、第二层卷积池化、第三层为全连接层，最后导入数据进行训练并保存模型[设计并训练NN算法对图片进行分类。](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/mnist_cnn.py)
  
- 6.[代码及运行结果](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/submit.ipynb)
+ 6.[所有代码及运行结果在jupyter notebook 中实现](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/submit.ipynb)
     
