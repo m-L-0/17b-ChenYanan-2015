@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# name:chenyanan
+
 import numpy as np
 from numpy import array
 import tensorflow as tf
