@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# name:chenyanan
+
+from read_tfrecord import read_tfrecord
+
 # 读取tfrecord代码 , 并验证
 for each in range(len(config)):
     config_path = 'mnist_' + config[each]['type'] + '.tfrecords'
