@@ -10,5 +10,5 @@
  
  5.[设计并训练NN算法对图片进行分类。](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/mnist_cnn.py)
  
- 6.[代码及运行结果]（https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/submit.ipynb）
+ 6.[代码及运行结果](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/FashionMNIST%20Challenge/submit.ipynb)
     
