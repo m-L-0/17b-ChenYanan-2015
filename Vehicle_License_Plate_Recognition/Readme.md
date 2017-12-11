@@ -51,5 +51,5 @@
                   z的召回率为0.971014  
         
         
-   **[原字符标签与预测字符标签](./test_labels.txt)**
-**[代码及算法总结](./code/submit.ipynd)**
+   **[原字符标签与预测字符标签](./test_labels.txt)**  
+**[代码及算法总结](https://github.com/m-L-0/17b-ChenYanan-2015/blob/master/Vehicle_License_Plate_Recognition/code/submit.ipynb)**
