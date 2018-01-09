@@ -1,0 +1,45 @@
+{# templates/index.html #}
+
+{% extends "base.html" %}
+{% block head %}
+    <title>Predicting the Captcha</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">
+    <link href="{{ url_for('static', filename='css/fileinput.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+    <script>window.jQuery || document.write('<script src="{{ url_for("static", filename="js/jquery-3.2.1.min.js") }}"><\/script>')</script>
+    <script src="{{ url_for('static', filename='js/fileinput.js') }}" type="text/javascript"></script>
+    <!-- <script src="{{ url_for('static', filename='js/locales/zh-TW.js') }}" type="text/javascript"></script> -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block page_content %}
+<div class="jumbotron">
+    <div class="page-header">
+        <h2>Predicting the Captcha <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;using cnn</small></h2>
+
+    </div>
+    <hr>
+    <form enctype="multipart/form-data">
+        <div class="form-group">
+            <input id="file-4" name = 'file' type="file" class="file" data-upload-url="#">
+        </div>    
+    </form>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+        $('#file-4').fileinput({
+            uploadUrl: './upload_file',
+            allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
+            slugCallback : function(filename) {
+                return filename.replace('(', '_').replace(']', '_');
+            }
+        }).on('fileuploaded', function (event, data, previewId, index) {
+            var form = data.form, files = data.files, extra = data.extra,
+                response = data.response, reader = data.reader;
+            $('.file-preview-status.text-center.text-success').html("验证码解析结果为"+response['extra']);
+            console.log(response);
+        });
+    });
+</script>
+{% endblock %}
