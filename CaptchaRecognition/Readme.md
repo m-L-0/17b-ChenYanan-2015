@@ -48,3 +48,6 @@ testing accuracy
 ## 7.API规范
 * url为localhost:5000
 * 点击Browser后，可选择上传验证图片，图片显示在页面后，点击upload按钮进行上传，在页面中即可显示预测结果
+
+
+**[submit](code/submit.ipynb)**
